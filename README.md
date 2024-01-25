@@ -1,6 +1,6 @@
 # My Portfolio
 
-Welcome to my portfolio ! 🌟 This space encapsulates a glimpse of my journey in the development. From coding projects to design endeavors, each entry reflects my passion and dedication.
+Welcome to my portfolio! 🌟 This space encapsulates a glimpse of my journey in development. From coding projects to design endeavors, each entry reflects my passion and dedication.
 
 ## Table of Contents
 - [About Me](#about-me)
@@ -27,7 +27,7 @@ Here are some of the key skills I bring to the table:
 Let's connect and discuss potential collaborations or opportunities:
 
   
-- [Twitter](harshninave04)  
+- [Twitter]([harshninave04](https://twitter.com/HarshNinave2004))  
 - [Email](harshninave58@gmail.com)  
 
 Feel free to explore, learn, and reach out! 🚀
