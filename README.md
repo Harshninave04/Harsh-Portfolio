@@ -27,8 +27,8 @@ Here are some of the key skills I bring to the table:
 Let's connect and discuss potential collaborations or opportunities:
 
   
-- [Twitter](#harshninave04)  
-- [Email](#harshninave58@gmail.com)  
+- [Twitter](harshninave04)  
+- [Email](harshninave58@gmail.com)  
 
 Feel free to explore, learn, and reach out! 🚀
 
