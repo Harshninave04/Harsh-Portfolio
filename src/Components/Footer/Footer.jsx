@@ -19,9 +19,19 @@ export default function Footer() {
                     Home
                   </Link>
                 </li>
-                <li>
+                <li className="mb-4">
                   <Link to="/about" className="hover:underline">
                     About
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link to="/github" className="hover:underline">
+                    Github
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact" className="hover:underline">
+                    Contact
                   </Link>
                 </li>
               </ul>
@@ -62,7 +72,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <hr className="my-6 border-slate-500 sm:mx-auto lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center">
             © 2023
