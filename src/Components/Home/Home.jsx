@@ -28,7 +28,7 @@ return (
         </div>
       </div>
       <div className="absolute inset-0 w-full sm:width-auto sm:my-20 sm:pt-1 pt-12 h-full ">
-        <img className="w-96 " src="./public/image-3.jpg" alt="image1" />
+        <img className="w-96 " src="/image-3.jpg" alt="image1" />
       </div>
     </aside>
   </div>
