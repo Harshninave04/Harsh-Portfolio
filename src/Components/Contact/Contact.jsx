@@ -1,5 +1,21 @@
 import {} from "react-router-dom";
+import { useState } from "react";
+
 export default function Contact() {
+  const [userData, setUserData] = useState({
+    firstName: "",
+    email: "",
+    tel: "",
+    message: "",
+  });
+
+  let name, value;
+  const postUserData = (event) => {
+    name = event.target.name;
+    value = event.target.value;
+    setUserData({ ...userData, [name]: value });
+  };
+
   return (
     <div className="relative flex items-top justify-center min-h-[500px] bg-white sm:items-center sm:pt-0">
       <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
@@ -81,16 +97,18 @@ export default function Contact() {
               </div>
             </div>
 
-            <form className="p-6 flex flex-col justify-center">
+            <form className="p-6 flex flex-col justify-center" method="POST">
               <div className="flex flex-col">
                 <label htmlFor="name" className="hidden">
                   Full Name
                 </label>
                 <input
                   type="name"
-                  name="name"
+                  name="firstName"
                   id="name"
                   placeholder="Full Name"
+                  value={userData.firstName}
+                  onChange={postUserData}
                   className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                 />
               </div>
@@ -104,6 +122,8 @@ export default function Contact() {
                   name="email"
                   id="email"
                   placeholder="Email"
+                  value={userData.email}
+                  onChange={postUserData}
                   className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                 />
               </div>
@@ -117,6 +137,8 @@ export default function Contact() {
                   name="tel"
                   id="tel"
                   placeholder="Telephone Number"
+                  value={userData.tel}
+                  onChange={postUserData}
                   className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                 />
               </div>
@@ -129,6 +151,8 @@ export default function Contact() {
                   name="message"
                   id="message"
                   placeholder="Type your message here"
+                  value={userData.message}
+                  onChange={postUserData}
                   className="w-full mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none resize-none"
                 />
               </div>
