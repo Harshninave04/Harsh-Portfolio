@@ -16,6 +16,43 @@ export default function Contact() {
     setUserData({ ...userData, [name]: value });
   };
 
+  // Connect with firebase
+  const submitData = async (event) => {
+    event.preventDefault();
+    const { firstName, email, tel, message } = userData;
+    if (firstName && email && tel && message) {
+      const res = await fetch(
+        "https://harshportfolionetlify-3991d-default-rtdb.firebaseio.com/userDataRecords.json",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            firstName,
+            email,
+            tel,
+            message,
+          }),
+        }
+      );
+
+      if (res) {
+        setUserData({
+          firstName: "",
+          email: "",
+          tel: "",
+          message: "",
+        });
+        alert("Message Sent !");
+      } else {
+        alert("Fill the data !");
+      }
+    } else {
+      alert("Fill the data !");
+    }
+  };
+
   return (
     <div className="relative flex items-top justify-center min-h-[500px] bg-white sm:items-center sm:pt-0">
       <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
@@ -158,6 +195,7 @@ export default function Contact() {
               </div>
 
               <button
+                onClick={submitData}
                 type="submit"
                 className="md:w-32 bg-orange-700 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-orange-600 transition ease-in-out duration-300">
                 Submit
