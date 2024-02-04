@@ -17,7 +17,7 @@ function project() {
     <div className="mx-auto w-full max-w-7xl">
       <aside className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16">
         <div className="relative z-10 max-w-screen-xl px-4  pb-20 pt-10 sm:py-24 mx-auto sm:px-6 lg:px-8">
-          <h1 className="flex items-center justify-center text-6xl font-bold">Projects</h1>
+          <h1 className="flex items-center justify-center text-5xl font-medium">Projects</h1>
           <div className="container mx-auto">
             <div className="grid grid-cols-1 my-16 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Project 1 */}
