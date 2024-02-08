@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Project from "../Project/project";
+import Jumbotron from "../Jumbotron/Jumbotron";
 
 export default function Home() {
   return (
@@ -37,6 +38,7 @@ export default function Home() {
 
       {/* Project Section */}
       <Project />
+      <Jumbotron />
     </>
   );
 }
