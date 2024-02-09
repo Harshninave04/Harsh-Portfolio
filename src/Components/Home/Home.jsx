@@ -3,6 +3,15 @@ import Project from "../Project/project";
 import Jumbotron from "../Jumbotron/Jumbotron";
 
 export default function Home() {
+
+  let technologies = [
+    { label: "HTML", url: "https://html.com" },
+    { label: "CSS", url: "https://css.com" },
+    { label: "JS", url: "https://JS.com" },
+    { label: "React", url: "https://React.com" },
+    { label: "Git/Github", url: "https://github.com" },
+    { label: "Tailwind", url: "https://Tailwind.com" },
+  ];
   return (
     <>
       <div className="mx-auto w-full max-w-7xl">
@@ -43,7 +52,7 @@ export default function Home() {
       {/*Skill Section */}
       <div id="skills" className="bg-gray-50 bg-opacity-25 py-12 ">
         <div className="max-w-screen-md xl:max-w-screen-5xl mx-auto gap-10 flex items-center justify-center">
-          <span className="bg-fuchsia-50 p-2 w-24 flex justify-center font-bold rounded-md">
+          {/* <span className="bg-fuchsia-50 p-2 w-24 flex justify-center font-bold rounded-md">
             <a href="">HTML</a>
           </span>
           <span className="bg-fuchsia-50 p-2 w-24 flex justify-center font-bold rounded-md">
@@ -60,7 +69,16 @@ export default function Home() {
           </span>
           <span className="bg-fuchsia-50 p-2 w-24 flex justify-center font-bold rounded-md">
             <a href="">Git/Github</a>
-          </span>
+          </span> */}
+          {technologies.map((technology) => (
+            <span
+              key={technology.label} // Ensure unique keys for each item
+              className="bg-fuchsia-50 p-2 w-24 flex justify-center font-bold rounded-md">
+              <a href={technology.url} target="_blank" rel="noopener noreferrer">
+                {technology.label}
+              </a>
+            </span>
+          ))}
         </div>
       </div>
     </>
