@@ -7,10 +7,13 @@ export default function Home() {
   let technologies = [
     { label: "HTML", url: "https://html.com" },
     { label: "CSS", url: "https://css.com" },
-    { label: "JS", url: "https://JS.com" },
+    { label: "JS", url: "https://Javascript.com" },
     { label: "React", url: "https://React.com" },
     { label: "Git/Github", url: "https://github.com" },
     { label: "Tailwind", url: "https://Tailwind.com" },
+    { label: "Java", url: "https://Java.com" },
+    { label: "C++", url: "https://cplusplus.com" },
+    { label: "Linux", url: "https://linux.com" },
   ];
   return (
     <>
