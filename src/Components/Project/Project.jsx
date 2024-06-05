@@ -1,16 +1,16 @@
 function project() {
   const redirectToProject1 = () => {
     //   window.location.href = "https://foto-folio.netlify.app/";
-    window.open("https://foto-folio.netlify.app/", "_blank");
+    window.open('https://foto-folio.netlify.app/', '_blank');
   };
   const redirectToProject2 = () => {
-    window.open("https://harshninave04.github.io/Bubble-Game/", "_blank");
+    window.open('https://harshninave04.github.io/Bubble-Game/', '_blank');
   };
   const redirectToProject3 = () => {
-    window.open("https://harshninave04.github.io/Fresh-Grocer-Website/", "_blank");
+    window.open('https://harshninave04.github.io/Fresh-Grocer-Website/', '_blank');
   };
   const redirectToProject4 = () => {
-    alert("Please hold until the project is finalized!");
+    alert('Please hold until the project is finalized!');
   };
 
   return (
@@ -20,6 +20,57 @@ function project() {
           <h1 className="flex items-center justify-center text-5xl font-medium">Projects</h1>
           <div className="container mx-auto">
             <div className="grid grid-cols-1 my-16 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Project 4 */}
+
+              <div className="bg-white p-6 rounded-lg shadow-lg">
+                <h3 className="text-xl font-semibold mb-4 flex justify-center">Libry</h3>
+                <a href="/">
+                  <img
+                    className="flex justify-start mt-4 w-full h-72 object-cover"
+                    src="libry.png" // Replace with your actual image URL
+                    alt="Project 3"
+                  />
+                </a>
+                <p className="text-gray-600 mt-4">
+                  Libry is a web app where you can buy or borrow ebooks. They offer recommendations
+                  and have a user-friendly interface.
+                </p>
+                <p className="italic text-zinc-400">Project is yet to deploy!</p>
+              </div>
+
+
+              {/* Project 5 */}
+
+              <div className="bg-white p-6 rounded-lg shadow-lg">
+                <h3 className="text-xl font-semibold mb-4 flex justify-center">Viki-Pedia</h3>
+                <a href="/">
+                  <img
+                    className="flex justify-start mt-4 w-full h-72 object-cover object-center"
+                    src="viki-pedia.png" // Replace with your actual image URL
+                    alt="Project 3"
+                  />
+                </a>
+                <p className="text-gray-600 mt-4">
+                  Viki-pedia provides a simple yet effective way to manage and view detailed
+                  information through an intuitive card-based interface.
+                </p>
+                <p className="italic text-zinc-400">Project is yet to deploy!</p>
+              </div>
+              {/* Project 3 */}
+              <div className="bg-white p-6 rounded-lg shadow-lg">
+                <h3 className="text-xl font-semibold mb-4 flex justify-center">Fresh-Grocery</h3>
+                <a href="" onClick={redirectToProject3}>
+                  <img
+                    className="mt-4 w-full h-72 object-cover object-center"
+                    src="fresh-grocer.png" // Replace with your actual image URL
+                    alt="Project 3"
+                  />
+                </a>
+                <p className="text-gray-600 mt-4">
+                  An online platform that allows users to conveniently order fresh fruits,
+                  vegetables, etc.
+                </p>
+              </div>
               {/* Project 1 */}
               <div className="bg-white p-6 rounded-lg shadow-lg">
                 <h3 className="text-xl font-semibold mb-4 flex justify-center">
@@ -43,7 +94,7 @@ function project() {
                 <h3 className="text-xl font-semibold mb-4 flex justify-center">Bubble-Game</h3>
                 <a href="" onClick={redirectToProject2}>
                   <img
-                    className="mt-4 w-fullf h-72 object-cover object-center"
+                    className="mt-4 w-full h-72 object-cover object-center"
                     src="/bubble.png" // Replace with your actual image URL
                     alt="Project 2"
                   />
@@ -54,30 +105,14 @@ function project() {
                 </p>
               </div>
 
-              {/* Project 3 */}
-              <div className="bg-white p-6 rounded-lg shadow-lg">
-                <h3 className="text-xl font-semibold mb-4 flex justify-center">Fresh-Grocery</h3>
-                <a href="" onClick={redirectToProject3}>
-                  <img
-                    className="mt-4 w-fullf h-72 object-cover object-center"
-                    src="fresh-grocer.png" // Replace with your actual image URL
-                    alt="Project 3"
-                  />
-                </a>
-                <p className="text-gray-600 mt-4">
-                  An online platform that allows users to conveniently order fresh fruits,
-                  vegetables, etc.
-                </p>
-              </div>
-
-              {/* Project 4 */}
+              {/* Project 5 */}
               <div className="bg-white p-6 rounded-lg shadow-lg">
                 <h3 className="text-xl font-semibold mb-4 flex justify-center">
                   Applicant Insight System
                 </h3>
                 <a href="" onClick={redirectToProject4}>
                   <img
-                    className="mt-4 w-fullf h-72 object-cover object-center"
+                    className="mt-4 w-full h-72 object-cover object-center"
                     src="loading.png" // Replace with your actual image URL
                     alt="Project 1"
                   />
