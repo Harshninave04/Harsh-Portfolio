@@ -54,7 +54,7 @@ export default function Home() {
 
       {/*Skill Section */}
       <div id="skills" className="bg-gray-50 bg-opacity-25 py-12 ">
-        <div className="max-w-screen-md xl:max-w-screen-5xl mx-auto gap-10 flex items-center justify-center">
+        <div className="max-w-screen-md xl:max-w-screen-5xl mx-auto flex flex-wrap gap-10 items-center justify-center">
           {/* <span className="bg-fuchsia-50 p-2 w-24 flex justify-center font-bold rounded-md">
             <a href="">HTML</a>
           </span>
