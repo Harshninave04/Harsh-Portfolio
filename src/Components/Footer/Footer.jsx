@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="mb-6 md:mb-0">
             <Link to="/" className="flex items-center">
               <a href="#">
-                <img className="w-14 h-14 rounded-full" src="../../../public/H.jpg" alt="" />
+                <img className="w-14 h-14 rounded-full" src="H.jpg" alt="" />
               </a>
             </Link>
           </div>

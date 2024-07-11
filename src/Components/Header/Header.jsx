@@ -16,7 +16,7 @@ export default function Header() {
       <nav className="bg-[#ffffff] border-gray-200 px-4 lg:px-6 py-2.5 drop-shadow-lg">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <Link to="/" className="flex items-center" id="logo">
-            <img className="w-14 h-14 rounded-full" src="../../../public/H.jpg" alt="" />
+            <img className="w-14 h-14 rounded-full" src="H.jpg" alt="" />
           </Link>
           <div className="flex items-center lg:order-2">
             <a
