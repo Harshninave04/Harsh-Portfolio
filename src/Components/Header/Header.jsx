@@ -19,8 +19,8 @@ export default function Header() {
             <img className="w-14 h-14 rounded-full" src="H.jpg" alt="" />
           </Link>
           <div className="flex items-center lg:order-2">
-            <a
-              href="/Github"
+            <NavLink
+              to="/github"
               className="mx-4 text-gray-600 transition-colors duration-300 transform dark:text-gray-500 hover:text-gray-600 hover:scale-150"
               aria-label="Github">
               <svg
@@ -35,7 +35,7 @@ export default function Header() {
                   clipRule="evenodd"
                 />
               </svg>
-            </a>
+            </NavLink>
             <a
               className="mx-4 text-gray-600 transition-colors duration-300 transform dark:text-gray-500 hover:text-gray-600 hover:scale-150"
               href="https://x.com/HarshNinave2004"
@@ -56,7 +56,9 @@ export default function Header() {
             </a>
             <a
               className="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
-              href="https://www.linkedin.com/in/harshninave2004/" target="_blank" rel="noreferrer">
+              href="https://www.linkedin.com/in/harshninave2004/"
+              target="_blank"
+              rel="noreferrer">
               <svg
                 className="w-8 h-8"
                 viewBox="0 0 24 24"
