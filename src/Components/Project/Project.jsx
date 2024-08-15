@@ -9,7 +9,14 @@ function project() {
   const redirectToProject3 = () => {
     window.open('https://harshninave04.github.io/Fresh-Grocer-Website/', '_blank');
   };
-  const redirectToProject4 = () => {
+  const redirectToProject5 = () => {
+    window.open('https://viki-pedia.onrender.com/', '_blank');
+  }
+  const redirectToProject6 = () => {
+    window.open('https://libry-frontend.onrender.com/', '_blank');
+  }
+
+  const redirectToProject = () => {
     alert('Please hold until the project is finalized!');
   };
 
@@ -24,7 +31,7 @@ function project() {
 
               <div className="bg-white p-6 rounded-lg shadow-lg">
                 <h3 className="text-xl font-semibold mb-4 flex justify-center">Libry</h3>
-                <a href="/">
+                <a href="/" onClick={redirectToProject6}>
                   <img
                     className="flex justify-start mt-4 w-full h-72 object-cover"
                     src="libry.png" // Replace with your actual image URL
@@ -43,7 +50,7 @@ function project() {
 
               <div className="bg-white p-6 rounded-lg shadow-lg">
                 <h3 className="text-xl font-semibold mb-4 flex justify-center">Viki-Pedia</h3>
-                <a href="/">
+                <a href="" onClick={redirectToProject5}>
                   <img
                     className="flex justify-start mt-4 w-full h-72 object-cover object-center"
                     src="viki-pedia.png" // Replace with your actual image URL
@@ -56,6 +63,7 @@ function project() {
                 </p>
                 <p className="italic text-zinc-400">Project is yet to deploy!</p>
               </div>
+
               {/* Project 3 */}
               <div className="bg-white p-6 rounded-lg shadow-lg">
                 <h3 className="text-xl font-semibold mb-4 flex justify-center">Fresh-Grocery</h3>
@@ -110,7 +118,7 @@ function project() {
                 <h3 className="text-xl font-semibold mb-4 flex justify-center">
                   Applicant Insight System
                 </h3>
-                <a href="" onClick={redirectToProject4}>
+                <a href="" onClick={redirectToProject}>
                   <img
                     className="mt-4 w-full h-72 object-cover object-center"
                     src="loading.png" // Replace with your actual image URL
