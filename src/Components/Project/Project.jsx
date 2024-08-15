@@ -42,7 +42,7 @@ function project() {
                   Libry is a web app where you can buy or borrow ebooks. They offer recommendations
                   and have a user-friendly interface.
                 </p>
-                <p className="italic text-zinc-400">Project is yet to deploy!</p>
+                {/* <p className="italic text-zinc-400">Project is yet to deploy!</p> */}
               </div>
 
 
@@ -61,7 +61,7 @@ function project() {
                   Viki-pedia provides a simple yet effective way to manage and view detailed
                   information through an intuitive card-based interface.
                 </p>
-                <p className="italic text-zinc-400">Project is yet to deploy!</p>
+                {/* <p className="italic text-zinc-400">Project is yet to deploy!</p> */}
               </div>
 
               {/* Project 3 */}
